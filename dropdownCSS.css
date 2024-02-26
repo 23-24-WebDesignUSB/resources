@@ -1,0 +1,56 @@
+li {
+	display: inline-block;
+	padding: 60px;
+	margin: 0px;
+	background-color: skyblue;
+	font-size: 32px;
+	font-style: italic;
+
+}
+
+.drop {
+	position: relative;
+	display: inline-block;
+}
+
+.dropChoices {
+	display: none;
+	position: absolute;
+	z-index: 1;
+}
+
+.dropChoices a {
+	background-color: darkblue;
+	color: yellow;
+	border: solid 2px;
+	margin: 0px;
+	padding: 10px;
+	display: block;
+}
+
+.drop:hover .dropChoices {
+	display: block;
+}
+
+.dropChoices a:hover {
+	background-color: grey;
+}
+
+table, th, tr, td {
+	border: 2px solid black;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 10px;
+}
+
+table {
+	margin-left: 25%;
+	width: 50%;
+}
+
+
+
+
+
