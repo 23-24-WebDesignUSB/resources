@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Javascript notes</title>
+</head>
+
+<script type="text/javascript">
+	
+	/* Comments are given with backslash + star */
+	// single line comments
+
+	function changeText() {
+		document.getElementById("top-title").innerHTML = "Welcome to JS";
+		document.getElementById("top-title").style.color = "red";
+	}
+
+	function butt1() {
+		document.getElementById("b1").innerHTML = "________";
+		document.getElementById("b2").innerHTML = "Press Me!";
+	}
+
+	function butt2() {
+		document.getElementById("b2").innerHTML = "________";
+		document.getElementById("b1").innerHTML = "Press Me!";
+		//alert("WARNING");
+	}
+	
+	
+
+</script>
+
+<body>
+
+
+	<h1 id="top-title">This is a javascript demonstration</h1>
+
+	<button type="button" onclick='changeText()'> 
+		Click here!
+	</button>
+
+	<button id="b1" type="button" onclick='butt1()'>
+		Press Me!
+	</button>
+
+	<button id="b2" type="button" onclick='butt2()'>
+		________
+	</button>
+
+</body>
+
+
+</html>
+
+
