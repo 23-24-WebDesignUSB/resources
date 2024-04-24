@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>form notes</title>
+</head>
+
+<body>
+
+	<form>
+		<label for="username">
+			Please type your username:
+		</label>
+		<input type="text" name="username" id="user">
+		<br>
+		<input type="text" name="num1" id="x">
+		<br>
+		<input type="text" name="num2" id="y">
+		<br>
+		<input type="button" value="Submit" onclick="results()">
+
+		<br>
+		<br>
+		<!-- Radio inputs have the same name but separate ids -->
+		<label for="cross"> Crosswords </label>
+		<input id="cross" type="radio" name="pickOne">
+
+		<label for="context"> Contexto </label>
+		<input id="context" type="radio" name="pickOne">
+
+		<label for="collect"> Collections </label>
+		<input id="collect" type="radio" name="pickOne">
+
+		<br>
+		<br>
+
+		<!-- Checklist inputs will not have the same name
+			They are essentially a bunch of True/False -->
+		<label for="op1">
+			<img src="stubbs.png">
+		</label>
+		<input id="op1" type="checkbox" name="option1">
+
+		<input type="checkbox" name="option2">
+
+		<input type="checkbox" name="option3">
+
+		<input type="checkbox" name="option4">
+
+	</form>
+
+	<p id="res">
+		
+	</p>
+
+	<p id="resNum">
+		
+	</p>
+
+</body>
+
+
+<script type="text/javascript">
+	
+	function results() {
+		var name = document.getElementById("user").value;
+		document.getElementById("res").innerHTML = "Welcome, " + name + "!";
+
+		var x = parseInt(document.getElementById("x").value);
+		var y = parseInt(document.getElementById("y").value);
+
+		if ((x + y) < 10) {
+			document.getElementById("resNum").innerHTML = "Small Numbers!";
+		}
+		else {
+			document.getElementById("resNum").innerHTML = "Wow, big numbers!";
+		}
+
+		var rad = document.getElementById("cross").checked;
+		if (rad) {
+			alert("My favorite DLE is the Mini Crossword");
+		}
+	}
+
+</script>
+
+</html>
+
+
+
+
+
