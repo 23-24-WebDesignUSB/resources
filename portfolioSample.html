@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Portfolio Example</title>
+</head>
+<body>
+
+	<h2> Welcome to my Portfolio</h2>
+
+	<center>
+		
+		<nav>
+			Webpages:
+			<ul>
+				<li><button onclick="bear()"> Bears </button></li>
+				<li>Treasure Hunt</li>
+			</ul>
+		</nav>
+
+		<!-- src is the url for any media or webpage you want to embed -->
+		<iframe id="embedPage" src="notes2_5.html"></iframe>
+
+	</center>
+
+</body>
+
+<script type="text/javascript">
+	
+	function bear() {
+		document.getElementById("embedPage").src = "bears.html";
+	}
+
+</script>
+
+
+</html>
+
